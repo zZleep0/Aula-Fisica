@@ -15,4 +15,6 @@ public class ChangeColor : MonoBehaviour
     {
         return new Color(UnityEngine.Random.Range(0f, 1f), UnityEngine.Random.Range(0f, 1f), UnityEngine.Random.Range(0f, 1f));
     }
+
+    
 }
