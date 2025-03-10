@@ -8,8 +8,17 @@ public class SceneTransferManager : MonoBehaviour
 
     public bool transfer = true;
 
+    public Renderer chaoTerra;
+    public Renderer chaoGelo;
+
     private void Start()
     {
+
+        chaoTerra = GameObject.Find("ChaoTerra").GetComponent<Renderer>();
+        chaoTerra.material.color = Color.green;
+
+        //chaoGelo = GameObject.Find("ChaoGelo").GetComponent<Renderer>();
+
         transfer = true;
     }
 
@@ -25,15 +34,19 @@ public class SceneTransferManager : MonoBehaviour
         
     }
 
+    
+
     void MoveObjectToAnotherScene()
     {
         switch (transfer)
         {
             case false:
+                chaoTerra.material.color = Color.white;
                 targetSceneName = "AlternativeScene";
                 break;
 
             case true:
+                chaoTerra.material.color = Color.green;
                 targetSceneName = "MainScene";
                 break;
         }
