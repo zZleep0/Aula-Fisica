@@ -8,6 +8,7 @@ TagManager:
   - Alternative
   - Item
   - Limite
+  - Alvo
   layers:
   - Default
   - TransparentFX
