@@ -27,4 +27,13 @@ public class PushCannon : MonoBehaviour
         //Rotaciona o canhnao
         rb.MoveRotation(rb.rotation * Quaternion.Euler(Vector3.up * turnInput * turnSpeed * Time.fixedDeltaTime));
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("speedNerf"))
+        {
+            rb.AddRelativeForce(new Vector3(0, 0, 500), ForceMode.Impulse);
+        }
+
+    }
 }

@@ -9,6 +9,8 @@ TagManager:
   - Item
   - Limite
   - Alvo
+  - Final
+  - speedNerf
   layers:
   - Default
   - TransparentFX
