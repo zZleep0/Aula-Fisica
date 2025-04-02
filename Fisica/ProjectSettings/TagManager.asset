@@ -11,6 +11,8 @@ TagManager:
   - Alvo
   - Final
   - speedNerf
+  - objetivo
+  - obstaculo
   layers:
   - Default
   - TransparentFX

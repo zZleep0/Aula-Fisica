@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AlternativeScene.unity
     guid: 65043df7b1bc1b5499b8c55611b65a8f
+  - enabled: 1
+    path: Assets/PROVA N1/PROVA N1.unity
+    guid: b8f5ceda8335b904db40b3b58fbd8328
+  - enabled: 1
+    path: Assets/PROVA N1/AltScene.unity
+    guid: 7738d87492ecb81448f3f0c2c8e07d0f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
