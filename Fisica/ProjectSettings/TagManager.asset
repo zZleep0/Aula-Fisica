@@ -13,11 +13,12 @@ TagManager:
   - speedNerf
   - objetivo
   - obstaculo
+  - Projectile
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
