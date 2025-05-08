@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 [RequireComponent (typeof(Rigidbody), typeof(Collider))]
@@ -14,10 +15,12 @@ public class JengaPiece : MonoBehaviour
 
     private Rigidbody rb;
     private Camera mainCamera;
-    private bool isDragging = false;
+    public bool isDragging = false;
     private Vector3 offset;
     private Vector3 startDragPosition;
     private float lastClickTime = -1f;
+
+    public int valor;
 
     private void Awake()
     {
@@ -66,7 +69,20 @@ public class JengaPiece : MonoBehaviour
             dragVector = dragVector.normalized * maxDragDistance;
         }
 
+        //Mover
         transform.position = startDragPosition + dragVector;
+
+        //LEVANTAR E ABAIXAR PEÇA
+        float velo = 3f;
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.Translate(new Vector3(0, 1, 0) * Time.deltaTime * velo);
+        }
+        else if (Input.GetKey(KeyCode.Q))
+        {
+            transform.Translate(new Vector3(0, -1, 0) * Time.deltaTime * velo);
+        }
+
     }
 
     private void OnMouseUp()
@@ -95,4 +111,6 @@ public class JengaPiece : MonoBehaviour
         }
         return transform.position;
     }
+
+    
 }

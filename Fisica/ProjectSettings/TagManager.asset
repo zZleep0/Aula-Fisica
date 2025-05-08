@@ -14,6 +14,12 @@ TagManager:
   - objetivo
   - obstaculo
   - Projectile
+  - 10
+  - 20
+  - 30
+  - 40
+  - 50
+  - Chao
   layers:
   - Default
   - TransparentFX

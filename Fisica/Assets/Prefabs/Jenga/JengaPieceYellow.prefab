@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 1590220953454068492}
   - component: {fileID: 3848318065345266023}
   - component: {fileID: 9200943916441064309}
-  - component: {fileID: 4504991976092479633}
-  - component: {fileID: 6949110114855591159}
+  - component: {fileID: 6597119575954170570}
+  - component: {fileID: -7025893316099963908}
   m_Layer: 0
-  m_Name: JengaPieceBlue
-  m_TagString: 10
+  m_Name: JengaPieceYellow
+  m_TagString: 50
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d68dd2327ab0874aa3364ac9bcf726c, type: 2}
+  - {fileID: 2100000, guid: 9a081235e00e5374b9c1f7454019eebc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,7 +97,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9047618748953962632}
-  m_Material: {fileID: 13400000, guid: 6a05ebbaed8cd0d45bf199b9ea294cbf, type: 2}
+  m_Material: {fileID: 13400000, guid: 32b4e54067834464fb35927dd8b19990, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -138,7 +138,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4504991976092479633
+--- !u!114 &6597119575954170570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,8 +155,8 @@ MonoBehaviour:
   doubleClickForceMultiplier: 2
   doubleClickThreshhold: 0.3
   isDragging: 0
-  valor: 10
---- !u!114 &6949110114855591159
+  valor: 50
+--- !u!114 &-7025893316099963908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

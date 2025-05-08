@@ -40,7 +40,14 @@ public class JengaManager : MonoBehaviour
         Vector3 startOffset = -direction * (totalWidth / 2f);
 
         //Loop de geracao dos prefabs na torre
+        for (int i = 0; i < piecesPerLayer; i++)
+        {
+            GameObject prefab = piecePrefabs[Random.Range(0, piecePrefabs.Count)];
+            Vector3 offset = direction * i * (pieceLength + pieceSpacing);
+            Vector3 spawnPosition = basePosition + startOffset + offset;
 
+            Instantiate(prefab, spawnPosition, rotation);
+        }
     }
 
     bool IsOddLayer(int layerIndex)

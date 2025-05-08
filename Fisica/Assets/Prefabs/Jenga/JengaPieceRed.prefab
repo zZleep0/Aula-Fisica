@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 3848318065345266023}
   - component: {fileID: 9200943916441064309}
   - component: {fileID: 6597119575954170570}
+  - component: {fileID: -268936685012548597}
   m_Layer: 0
   m_Name: JengaPieceRed
-  m_TagString: Untagged
+  m_TagString: 40
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +97,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9047618748953962632}
-  m_Material: {fileID: 13400000, guid: c3e74b8f0750cdb42a752f93a4dbce89, type: 2}
+  m_Material: {fileID: 13400000, guid: 35dbdd78c81b25a4392e9ce3765d3f41, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -149,3 +150,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ee02575e4024241856b30c3f2eaca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxDragDistance: 10
+  pushForce: 5
+  doubleClickForceMultiplier: 2
+  doubleClickThreshhold: 0.3
+  isDragging: 0
+  valor: 40
+--- !u!114 &-268936685012548597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9047618748953962632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c103f2d6a560648b2738a3ea0fe7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canStart: 0
