@@ -35,6 +35,11 @@ public class PlayerTurn : MonoBehaviour
                 break;
         }
 
+        if (pontosP1 >= 200)
+            txtFinal.text = "Player 1 venceu por atingir 200 pontos";
+        else if (pontosP2 >= 200)
+            txtFinal.text = "Player 2 venceu por atingir 200 pontos";
+
         //if (Input.GetKeyDown(KeyCode.Space))
         //{
         //    turn =! turn;
@@ -43,8 +48,8 @@ public class PlayerTurn : MonoBehaviour
 
         txtTurno.text = "É a vez do " + player;
 
-        txtPontosP1.text = pontosP1.ToString();
-        txtPontosP2.text = pontosP2.ToString();
+        txtPontosP1.text = "Player 1: " + pontosP1.ToString();
+        txtPontosP2.text = "Player 2: " + pontosP2.ToString();
 
         if (fim)
         {

@@ -83,6 +83,15 @@ public class JengaPiece : MonoBehaviour
             transform.Translate(new Vector3(0, -1, 0) * Time.deltaTime * velo);
         }
 
+        float veloRotation = 30f;
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(new Vector3(0, 1, 0) * Time.deltaTime * veloRotation);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(new Vector3(0, -1, 0) * Time.deltaTime * veloRotation);
+        }
     }
 
     private void OnMouseUp()

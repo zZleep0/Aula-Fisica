@@ -34,20 +34,19 @@ public class PieceCollision : MonoBehaviour
     {
         if (canStart)
         {
+            PlayerTurn turno = GameObject.Find("PlayerTurn").GetComponent<PlayerTurn>();
+
             if (collision.collider.CompareTag("Chao"))
             {
-                PlayerTurn turno = GameObject.Find("PlayerTurn").GetComponent<PlayerTurn>();
                 turno.fim = true;
-                
             }
             
             
-            if (!piece.isDragging && isFlying)
+            if (!piece.isDragging && isFlying && !turno.fim)
             {
                 if (collision.collider.CompareTag("10") || collision.collider.CompareTag("20") || collision.collider.CompareTag("30") || collision.collider.CompareTag("40") || collision.collider.CompareTag("50"))
                 {
                     Debug.Log("colidiu" + collision.gameObject.name);
-                    PlayerTurn turno = GameObject.Find("PlayerTurn").GetComponent<PlayerTurn>();
                     if (turno.player == "Player 1")
                     {
                         turno.pontosP1 += piece.valor;
